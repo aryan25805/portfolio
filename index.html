@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARYAN - Full Stack Developer Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-slate-950 text-gray-100 font-poppins antialiased">
+
+    <header class="fixed top-0 left-0 w-full z-50 py-4 custom-glassmorphism transition-all duration-300">
+        <div class="container mx-auto flex justify-between items-center px-4">
+            <a href="#" class="text-3xl font-bold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">ARYAN</a>
+            <nav id="desktop-nav" class="hidden lg:flex space-x-6">
+                <a href="#hero" class="nav-link">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#experience" class="nav-link">Experience</a>
+                <a href="#education" class="nav-link">Education</a>
+                <a href="#certificates" class="nav-link">Certificates</a>
+                <a href="#contact" class="nav-link">Contact</a>
+            </nav>
+            <button id="mobile-menu-button" class="lg:hidden text-gray-100 focus:outline-none relative w-8 h-6 flex flex-col justify-between items-end">
+                <span class="block w-full h-0.5 bg-gray-100 rounded-full transition-all duration-300 transform origin-left"></span>
+                <span class="block w-5 h-0.5 bg-gray-100 rounded-full transition-all duration-300"></span>
+                <span class="block w-full h-0.5 bg-gray-100 rounded-full transition-all duration-300 transform origin-left"></span>
+            </button>
+        </div>
+        <div id="mobile-menu" class="fixed inset-0 bg-slate-900 bg-opacity-95 backdrop-blur-md z-40 hidden lg:hidden transition-opacity duration-300 opacity-0">
+            <div class="flex justify-end p-4">
+                <button id="close-mobile-menu-button" class="text-gray-100 text-4xl leading-none">&times;</button>
+            </div>
+            <nav class="flex flex-col items-center justify-center h-full space-y-8 text-3xl font-semibold">
+                <a href="#hero" class="nav-link-mobile">Home</a>
+                <a href="#about" class="nav-link-mobile">About</a>
+                <a href="#skills" class="nav-link-mobile">Skills</a>
+                <a href="#projects" class="nav-link-mobile">Projects</a>
+                <a href="#experience" class="nav-link-mobile">Experience</a>
+                <a href="#education" class="nav-link-mobile">Education</a>
+                <a href="#certificates" class="nav-link-mobile">Certificates</a>
+                <a href="#contact" class="nav-link-mobile">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="relative z-10">
+        <section id="hero" class="min-h-screen flex items-center justify-center relative overflow-hidden py-20">
+            <div class="absolute inset-0 z-0 hero-bg"></div>
+            <div id="particles-js" class="absolute inset-0 z-0 opacity-30"></div>
+            <div class="container mx-auto text-center relative z-10 px-4">
+                <div class="relative w-48 h-48 mx-auto mb-8 rounded-full border-4 border-cyan-500 shadow-lg glow-effect animate-pulse-light">
+                    <img src="https://placehold.co/192x192/0f172a/e0e7ff?text=ARYAN" alt="Aryan's Photo" class="w-full h-full object-cover rounded-full">
+                </div>
+                <h1 class="text-6xl md:text-8xl font-extrabold text-gray-50 leading-tight mb-4 reveal-up">
+                    Hello, I'm <span class="text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-purple-500">ARYAN</span>
+                </h1>
+                <p class="text-2xl md:text-4xl text-gray-300 font-ibm-plex-mono mb-10 typewriter-text reveal-up" data-delay="200" data-phrases='["Full Stack Developer", "Problem Solver", "Tech Enthusiast", "Innovator"]'></p>
+                <div class="flex flex-wrap justify-center gap-6 mt-12 reveal-up" data-delay="400">
+                    <a href="#contact" class="btn-primary-hero group">
+                        Get in Touch <i class="fas fa-arrow-right ml-2 transition-transform group-hover:translate-x-1"></i>
+                    </a>
+                    <a href="#projects" class="btn-secondary-hero group">
+                        View My Work <i class="fas fa-code ml-2 transition-transform group-hover:scale-110"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="absolute bottom-10 left-1/2 -translate-x-1/2 animate-bounce">
+                <a href="#about" aria-label="Scroll down to About section">
+                    <i class="fas fa-chevron-down text-gray-400 text-3xl"></i>
+                </a>
+            </div>
+        </section>
+
+        <section id="about" class="py-24 md:py-32">
+            <div class="container mx-auto px-4 text-center max-w-4xl">
+                <h2 class="section-heading reveal-up">About <span class="text-cyan-400">Me</span></h2>
+                <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-8 reveal-up" data-delay="200">
+                    I'm a passionate Full Stack Developer with a knack for building elegant and efficient web applications. My journey into programming began with a curiosity for how things work, and it quickly evolved into a drive to create impactful solutions. I thrive on challenges, constantly learning new technologies, and pushing the boundaries of what's possible.
+                </p>
+                <p class="text-lg md:text-xl text-gray-300 leading-relaxed reveal-up" data-delay="400">
+                    With a strong foundation in both front-end and back-end development, I enjoy bringing ideas to life from concept to deployment. My goal is to craft seamless user experiences and robust systems that are not only functional but also a joy to use.
+                </p>
+            </div>
+        </section>
+
+        <section id="skills" class="py-24 md:py-32 bg-slate-900 bg-opacity-60">
+            <div class="container mx-auto px-4">
+                <h2 class="section-heading reveal-up">My <span class="text-purple-400">Skills</span></h2>
+                <h3 class="text-3xl font-semibold text-gray-200 mb-12 text-center reveal-up" data-delay="200">Technical Skills</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6 gap-8 mb-16">
+                    <div class="skill-card group"><i class="devicon-javascript-plain colored"></i><h4 class="skill-name">JavaScript</h4></div>
+                    <div class="skill-card group"><i class="devicon-html5-plain colored"></i><h4 class="skill-name">HTML5</h4></div>
+                    <div class="skill-card group"><i class="devicon-css3-plain colored"></i><h4 class="skill-name">CSS3</h4></div>
+                    <div class="skill-card group"><i class="devicon-react-original colored"></i><h4 class="skill-name">React</h4></div>
+                    <div class="skill-card group"><i class="devicon-nodejs-plain colored"></i><h4 class="skill-name">Node.js</h4></div>
+                    <div class="skill-card group"><i class="devicon-express-original colored"></i><h4 class="skill-name">Express.js</h4></div>
+                    <div class="skill-card group"><i class="devicon-mongodb-plain colored"></i><h4 class="skill-name">MongoDB</h4></div>
+                    <div class="skill-card group"><i class="devicon-python-plain colored"></i><h4 class="skill-name">Python</h4></div>
+                    <div class="skill-card group"><i class="devicon-django-plain colored"></i><h4 class="skill-name">Django</h4></div>
+                    <div class="skill-card group"><i class="devicon-mysql-plain colored"></i><h4 class="skill-name">MySQL</h4></div>
+                    <div class="skill-card group"><i class="devicon-postgresql-plain colored"></i><h4 class="skill-name">PostgreSQL</h4></div>
+                    <div class="skill-card group"><i class="devicon-amazonwebservices-original colored"></i><h4 class="skill-name">AWS</h4></div>
+                    <div class="skill-card group"><i class="devicon-git-plain colored"></i><h4 class="skill-name">Git</h4></div>
+                    <div class="skill-card group"><i class="devicon-github-original colored"></i><h4 class="skill-name">GitHub</h4></div>
+                    <div class="skill-card group"><i class="devicon-cplusplus-plain colored"></i><h4 class="skill-name">C++</h4></div>
+                    <div class="skill-card group"><i class="devicon-c-plain colored"></i><h4 class="skill-name">C</h4></div>
+                </div>
+
+                <h3 class="text-3xl font-semibold text-gray-200 mb-12 text-center reveal-up">Soft Skills</h3>
+                <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-8">
+                    <div class="skill-card group"><i class="fas fa-comments text-green-400"></i><h4 class="skill-name">Communication</h4></div>
+                    <div class="skill-card group"><i class="fas fa-handshake text-blue-400"></i><h4 class="skill-name">Teamwork</h4></div>
+                    <div class="skill-card group"><i class="fas fa-lightbulb text-yellow-400"></i><h4 class="skill-name">Problem Solving</h4></div>
+                    <div class="skill-card group"><i class="fas fa-chart-line text-teal-400"></i><h4 class="skill-name">Adaptability</h4></div>
+                    <div class="skill-card group"><i class="fas fa-clock text-red-400"></i><h4 class="skill-name">Time Management</h4></div>
+                </div>
+            </div>
+        </section>
+
+        <section id="projects" class="py-24 md:py-32">
+            <div class="container mx-auto px-4">
+                <h2 class="section-heading reveal-up">My <span class="text-cyan-400">Projects</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/1e293b/93c5fd/png?text=E-commerce" alt="Project" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-50 mb-2">E-commerce Platform</h3>
+                            <p class="text-gray-400 text-sm mb-4 flex-grow">A MERN stack e-commerce site with user auth, cart, and payments.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="tech-tag">React</span><span class="tech-tag">Node.js</span><span class="tech-tag">MongoDB</span>
+                            </div>
+                            <div class="flex gap-4 mt-auto">
+                                <a href="#" class="btn-project w-full text-center">Details</a>
+                                <a href="#" class="btn-project-secondary w-full text-center">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/1e293b/6ee7b7/png?text=Task+Manager" alt="Project" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-50 mb-2">Task Management App</h3>
+                            <p class="text-gray-400 text-sm mb-4 flex-grow">A Django-based app to manage daily tasks with prioritization.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="tech-tag">Django</span><span class="tech-tag">Python</span><span class="tech-tag">PostgreSQL</span>
+                            </div>
+                             <div class="flex gap-4 mt-auto">
+                                <a href="#" class="btn-project w-full text-center">Details</a>
+                                <a href="#" class="btn-project-secondary w-full text-center">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400/1e293b/f9a8d4/png?text=Portfolio" alt="Project" class="w-full h-56 object-cover">
+                        <div class="p-6 flex flex-col flex-grow">
+                            <h3 class="text-2xl font-bold text-gray-50 mb-2">Portfolio Website</h3>
+                            <p class="text-gray-400 text-sm mb-4 flex-grow">The website you are currently viewing, built with modern tech.</p>
+                            <div class="flex flex-wrap gap-2 mb-6">
+                                <span class="tech-tag">HTML5</span><span class="tech-tag">TailwindCSS</span><span class="tech-tag">JavaScript</span>
+                            </div>
+                             <div class="flex gap-4 mt-auto">
+                                <a href="#" class="btn-project w-full text-center">Details</a>
+                                <a href="#" class="btn-project-secondary w-full text-center">Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="experience" class="py-24 md:py-32 bg-slate-900 bg-opacity-60">
+             <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="section-heading reveal-up">My <span class="text-purple-400">Experience</span></h2>
+                <div class="relative pl-8 md:pl-4 timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-50 mb-1">Full Stack Developer</h3>
+                        <p class="text-purple-300 text-lg mb-2">Tech Solutions Inc. | Jan 2024 - Present</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                            <li>Developed and maintained web applications using React, Node.js, and MongoDB.</li>
+                            <li>Collaborated with cross-functional teams to define, design, and ship new features.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fas fa-briefcase"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-50 mb-1">Junior Web Developer</h3>
+                        <p class="text-purple-300 text-lg mb-2">Web Innovators Co. | June 2022 - Dec 2023</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                            <li>Assisted in the development of front-end components using HTML, CSS, and JavaScript.</li>
+                            <li>Participated in code reviews and contributed to improving code quality.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="py-24 md:py-32">
+            <div class="container mx-auto px-4 max-w-4xl">
+                <h2 class="section-heading reveal-up">My <span class="text-cyan-400">Education</span></h2>
+                <div class="relative pl-8 md:pl-4 timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fas fa-graduation-cap"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-50 mb-1">Bachelor of Technology in Computer Science</h3>
+                        <p class="text-cyan-300 text-lg mb-2">Your University Name | 2019 - 2023</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                            <li>Specialized in Software Engineering and Web Technologies.</li>
+                            <li>Completed major projects in database management and distributed systems.</li>
+                        </ul>
+                    </div>
+                     <div class="timeline-item">
+                        <div class="timeline-dot"><i class="fas fa-school"></i></div>
+                        <h3 class="text-2xl font-semibold text-gray-50 mb-1">Higher Secondary Education</h3>
+                        <p class="text-cyan-300 text-lg mb-2">Your College Name | 2017 - 2019</p>
+                        <ul class="list-disc list-inside text-gray-300 space-y-2 ml-4">
+                            <li>Focused on Science stream (Physics, Chemistry, Maths).</li>
+                            <li>Participated in various inter-school coding competitions.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="certificates" class="py-24 md:py-32 bg-slate-900 bg-opacity-60">
+            <div class="container mx-auto px-4">
+                <h2 class="section-heading reveal-up">My <span class="text-purple-400">Certificates</span></h2>
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
+                    <div class="certificate-card">
+                        <img src="https://placehold.co/600x400/1e293b/a5b4fc/png?text=Full+Stack" alt="Certificate" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-50 mb-2">Full Stack Web Development</h3>
+                            <p class="text-gray-400 text-sm mb-4">Coursera | Issued: Jan 2023</p>
+                            <a href="#" class="btn-project w-full text-center">View Credential</a>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="https://placehold.co/600x400/1e293b/fcd34d/png?text=AWS" alt="Certificate" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-50 mb-2">AWS Certified Cloud Practitioner</h3>
+                            <p class="text-gray-400 text-sm mb-4">Amazon Web Services | Sep 2022</p>
+                            <a href="#" class="btn-project w-full text-center">View Credential</a>
+                        </div>
+                    </div>
+                    <div class="certificate-card">
+                        <img src="https://placehold.co/600x400/1e293b/86efac/png?text=Machine+Learning" alt="Certificate" class="w-full h-48 object-cover">
+                        <div class="p-6">
+                            <h3 class="text-xl font-bold text-gray-50 mb-2">Machine Learning Specialization</h3>
+                            <p class="text-gray-400 text-sm mb-4">Udemy | Issued: June 2022</p>
+                            <a href="#" class="btn-project w-full text-center">View Credential</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contact" class="py-24 md:py-32">
+            <div class="container mx-auto px-4 max-w-2xl text-center">
+                <h2 class="section-heading reveal-up">Get in <span class="text-cyan-400">Touch</span></h2>
+                <p class="text-lg md:text-xl text-gray-300 leading-relaxed mb-10 reveal-up" data-delay="200">
+                    I'm currently open to new opportunities and collaborations. If you have a project in mind, a question, or just want to connect, feel free to reach out!
+                </p>
+                <form action="#" method="POST" class="space-y-6 text-left custom-glassmorphism p-8 rounded-xl shadow-lg reveal-up" data-delay="400">
+                    <div>
+                        <label for="name" class="block text-gray-300 text-sm font-bold mb-2">Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Your Name" required>
+                    </div>
+                    <div>
+                        <label for="email" class="block text-gray-300 text-sm font-bold mb-2">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="you@example.com" required>
+                    </div>
+                    <div>
+                        <label for="message" class="block text-gray-300 text-sm font-bold mb-2">Message</label>
+                        <textarea id="message" name="message" rows="5" class="form-input" placeholder="Your message..." required></textarea>
+                    </div>
+                    <div class="text-center">
+                        <button type="submit" class="btn-primary-hero group w-full">
+                            Send Message <i class="fas fa-paper-plane ml-2"></i>
+                        </button>
+                    </div>
+                </form>
+                 <div class="mt-12 text-center reveal-up" data-delay="600">
+                    <p class="text-lg text-gray-300 mb-4">You can also find me on:</p>
+                    <div class="flex justify-center space-x-6">
+                        <a href="#" class="social-icon"><i class="fab fa-github"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-icon"><i class="fas fa-envelope"></i></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="py-12 border-t border-slate-800 text-center text-gray-500 text-sm">
+        <div class="container mx-auto px-4">
+            <p>&copy; 2025 ARYAN. Designed with ❤️.</p>
+        </div>
+    </footer>
+    
+    <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+</html>
